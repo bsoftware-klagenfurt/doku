@@ -2,7 +2,7 @@
 import { defineConfig } from "tinacms";
 var branch = process.env.GITHUB_BRANCH || process.env.HEAD || "main";
 var isDev = true;
-var basePath = isDev ? "" : "/doku";
+var basePath = isDev ? "" : "doku";
 var config_default = defineConfig({
   branch,
   clientId: process.env.TINA_PUBLIC_CLIENT_ID || process.env.PUBLIC_TINA_CLIENT_ID || "",

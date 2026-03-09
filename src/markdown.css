@@ -1,0 +1,336 @@
+@layer markdown;
+
+/* ==========================================================================
+   TinaCMS Markdown Styling
+   Usage:
+   <article class="tina-content">
+     <!-- rendered md/html -->
+   </article>
+   ========================================================================== */
+
+@layer markdown {
+  .tina-content {
+    --md-max-width: 86ch;
+    --md-media-max-width: 52rem;
+    --md-code-bg: #111827;
+    --md-code-fg: #f3f4f6;
+    --md-inline-code-bg: var(--color-bg-soft);
+    --md-inline-code-border: var(--color-border);
+    --md-quote-bg: rgba(0, 220, 6, 0.06);
+    --md-quote-border: var(--color-primary);
+
+    width: min(100%, var(--md-max-width));
+    margin-inline: auto;
+    padding: clamp(1.1rem, 2.8vw, 2rem);
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdfb 100%);
+    border: 1px solid var(--color-border);
+    /* border-radius: var(--radius-xl); */
+    /* box-shadow: var(--shadow-md); */
+    color: var(--color-text);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    text-wrap: pretty;
+  }
+
+  .tina-content > * + * {
+    margin-top: 1.2em;
+  }
+
+  .tina-content > :first-child {
+    margin-top: 0;
+  }
+
+  .tina-content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .tina-content h1,
+  .tina-content h2,
+  .tina-content h3,
+  .tina-content h4,
+  .tina-content h5,
+  .tina-content h6 {
+    scroll-margin-top: 6rem;
+  }
+
+  .tina-content h1 {
+    font-size: clamp(2.3rem, 4vw, 3.6rem);
+    margin-bottom: 0.65em;
+  }
+
+  .tina-content h2 {
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    margin-top: 2.3em;
+    margin-bottom: 0.65em;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .tina-content h3 {
+    font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+    margin-top: 2em;
+    margin-bottom: 0.55em;
+  }
+
+  .tina-content h4 {
+    font-size: 1.15rem;
+    margin-top: 1.7em;
+    margin-bottom: 0.45em;
+  }
+
+  .tina-content h5,
+  .tina-content h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+  }
+
+  .tina-content p {
+    margin: 0;
+  }
+
+  .tina-content > p:first-of-type {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+  }
+
+  .tina-content a {
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 220, 6, 0.38);
+  }
+
+  .tina-content a:hover,
+  .tina-content a:focus-visible {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+  }
+
+  .tina-content ul,
+  .tina-content ol {
+    padding-left: 1.35rem;
+  }
+
+  .tina-content li + li {
+    margin-top: 0.45em;
+  }
+
+  .tina-content li::marker {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .tina-content ul ul,
+  .tina-content ul ol,
+  .tina-content ol ul,
+  .tina-content ol ol {
+    margin-top: 0.5em;
+  }
+
+  .tina-content strong {
+    color: var(--color-heading);
+    font-weight: 750;
+  }
+
+  .tina-content em {
+    color: inherit;
+  }
+
+  .tina-content hr {
+    margin: 2.5rem 0;
+  }
+
+  .tina-content blockquote {
+    margin: 1.8rem 0;
+    padding: 1rem 1.1rem 1rem 1.2rem;
+    border-left: 4px solid var(--md-quote-border);
+    background: linear-gradient(
+      90deg,
+      var(--md-quote-bg) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .tina-content blockquote > *:first-child {
+    margin-top: 0;
+  }
+
+  .tina-content blockquote > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .tina-content code {
+    font-family: var(--font-mono);
+    font-size: 0.92em;
+    background: var(--md-inline-code-bg);
+    border: 1px solid var(--md-inline-code-border);
+    border-radius: 0.45rem;
+    padding: 0.16em 0.38em;
+    color: var(--color-heading);
+  }
+
+  .tina-content pre {
+    margin: 1.5rem 0;
+    padding: 1rem 1.1rem;
+    overflow-x: auto;
+    background: var(--md-code-bg);
+    color: var(--md-code-fg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+  }
+
+  .tina-content pre code {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .tina-content img {
+    display: block;
+    width: min(100%, var(--md-media-max-width));
+    height: auto;
+    margin-inline: auto;
+    border-radius: 1rem;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+  }
+
+  .tina-content figure {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .tina-content figure > img {
+    margin-bottom: 0.75rem;
+  }
+
+  .tina-content figcaption {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .tina-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.75rem 0;
+    font-size: 0.98rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .tina-content thead {
+    background: var(--color-bg-soft);
+  }
+
+  .tina-content th,
+  .tina-content td {
+    padding: 0.8rem 0.95rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .tina-content th {
+    color: var(--color-heading);
+    font-weight: 700;
+  }
+
+  .tina-content tbody tr:hover {
+    background: rgba(0, 220, 6, 0.035);
+  }
+
+  .tina-content .button,
+  .tina-content .btn,
+  .tina-content a.button,
+  .tina-content a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 2.8rem;
+    padding: 0.78rem 1.1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-pill);
+    background: var(--color-primary);
+    color: var(--color-primary-contrast);
+    text-decoration: none;
+    font-weight: 750;
+    box-shadow: 0 8px 22px rgba(0, 220, 6, 0.18);
+  }
+
+  .tina-content .button:hover,
+  .tina-content .btn:hover,
+  .tina-content a.button:hover,
+  .tina-content a.btn:hover {
+    background: var(--color-primary-hover);
+    color: var(--color-primary-contrast);
+    transform: translateY(-1px);
+  }
+
+  .tina-content .callout {
+    margin: 1.5rem 0;
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(0, 220, 6, 0.18);
+    border-radius: var(--radius-md);
+    background: rgba(0, 220, 6, 0.06);
+  }
+
+  .tina-content .callout > :first-child {
+    margin-top: 0;
+  }
+
+  .tina-content .callout > :last-child {
+    margin-bottom: 0;
+  }
+
+  .tina-content .heading-anchor {
+    opacity: 0;
+    margin-left: 0.4rem;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .tina-content h1:hover .heading-anchor,
+  .tina-content h2:hover .heading-anchor,
+  .tina-content h3:hover .heading-anchor,
+  .tina-content h4:hover .heading-anchor {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .tina-content {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .tina-content h1 {
+      font-size: 2rem;
+    }
+
+    .tina-content h2 {
+      font-size: 1.5rem;
+    }
+
+    .tina-content h3 {
+      font-size: 1.25rem;
+    }
+
+    .tina-content table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+}

@@ -9,7 +9,10 @@ export type DocMeta = {
 	description?: string;
 };
 
-const files = import.meta.glob('../../content/docs/**/*.md', { query: '?raw', import: 'default' });
+const files = import.meta.glob<string>('../../content/docs/**/*.md', {
+	query: '?raw',
+	import: 'default'
+});
 
 function parseFrontmatter(raw: string): { frontmatter: Frontmatter; bodyMarkdown: string } {
 	let title = 'Untitled';

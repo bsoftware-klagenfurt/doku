@@ -8,7 +8,7 @@
 			: null;
 </script>
 
-<nav>
+<nav class="doc-breadcrumb">
 	<a href="{base}/">Home</a>
 	{#if section}
 		<span> / </span>
@@ -18,4 +18,4 @@
 
 <h1>{data.title}</h1>
 {#if data.description}<p>{data.description}</p>{/if}
-<div>{@html data.html}</div>
+<article class="tina-content">{@html data.html}</article>

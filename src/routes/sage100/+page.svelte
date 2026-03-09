@@ -3,7 +3,7 @@
 	export let data: { docs: { slug: string; title: string; description?: string }[] };
 </script>
 
-<h1>Eigenlösung</h1>
+<h1>Sage100</h1>
 <ul>
 	{#each data.docs as doc}
 		<li>
