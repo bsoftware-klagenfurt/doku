@@ -7,6 +7,4 @@ description: Erste Schritte für Webapps
 
 * Übersicht
 * Setup
-* Deployment  
-
-![](/logo.png)
+* Deployment
