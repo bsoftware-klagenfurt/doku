@@ -25,6 +25,14 @@ export default defineConfig({
 				name: 'docs',
 				label: 'Docs',
 				path: 'content/docs',
+				ui: {
+          // Don't allow editors to create new navigation items
+				allowedActions: {
+						create: true,
+						delete: true,
+						createNestedFolder: false,
+					},
+				},
 				format: 'md',
 				fields: [
 					{ name: 'title', label: 'Title', type: 'string', required: true },
