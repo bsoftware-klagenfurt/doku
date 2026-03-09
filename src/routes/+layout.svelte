@@ -24,7 +24,7 @@
 
 			<nav class="site-nav" aria-label="Main navigation">
 				<a href={resolve('/')}>Home</a>
-				<a href={resolve('/admin')}>Admin</a>
+				<a href={resolve('/admin/')}>Admin</a>
 			</nav>
 		</div>
 	</header>
