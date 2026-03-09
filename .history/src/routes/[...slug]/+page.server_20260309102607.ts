@@ -28,7 +28,7 @@ export const load: PageServerLoad = async ({ params }) => {
 			description: doc.description,
 			html
 		};
-	} catch (e: unknown) {
-		throw error(404, e instanceof Error ? e.message : 'Not found');
+	} catch (e) {
+		throw error(404, 'Not found');
 	}
 };
