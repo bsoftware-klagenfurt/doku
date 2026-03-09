@@ -2,7 +2,7 @@ import { defineConfig } from 'tinacms';
 
 const branch = process.env.GITHUB_BRANCH || process.env.HEAD || 'main';
 const isDev = process.env.NODE_ENV === 'development';
-const basePath = isDev ? '' : '/doku';
+const basePath = isDev ? '' : 'doku';
 
 export default defineConfig({
 	branch,
