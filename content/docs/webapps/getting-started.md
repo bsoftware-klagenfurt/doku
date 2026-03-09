@@ -3,8 +3,4 @@ title: Getting Started (Webapps)
 description: Erste Schritte für Webapps
 ---
 
-# Getting Started (Webapps)
-
-* Übersicht
-* Setup
-* Deployment
+[2025\_Systemvoraussetzungen.pdf](/images/2025_Systemvoraussetzungen.pdf "2025_Systemvoraussetzungen.pdf")

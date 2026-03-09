@@ -1,9 +1,13 @@
-<script>
+<script lang="ts">
 	import { base } from '$app/paths';
+	export let data: { sections: string[] };
 </script>
 
 <h1>Dokumentation</h1>
 <ul>
-	<li><a href="{base}/webapps">Webapps</a></li>
-	<li><a href="{base}/sage100">Sage100</a></li>
+	{#each data.sections as section}
+		<li>
+			<a href={`${base}/${section}`}>{section}</a>
+		</li>
+	{/each}
 </ul>

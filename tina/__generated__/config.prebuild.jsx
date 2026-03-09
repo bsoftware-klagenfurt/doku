@@ -24,6 +24,13 @@ var config_default = defineConfig({
         name: "docs",
         label: "Docs",
         path: "content/docs",
+        ui: {
+          allowedActions: {
+            create: true,
+            delete: true,
+            createNestedFolder: false
+          }
+        },
         format: "md",
         fields: [
           { name: "title", label: "Title", type: "string", required: true },

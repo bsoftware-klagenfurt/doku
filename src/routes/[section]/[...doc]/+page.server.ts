@@ -17,18 +17,22 @@ function applyBaseToRootRelativeUrls(html: string): string {
 }
 
 export const load: PageServerLoad = async ({ params }) => {
-	const slug = params.slug;
+	const { section, doc } = params;
+	const slug = `${section}/${doc}`;
+
 	try {
-		const doc = await loadDoc(slug);
-		const processed = await remark().use(remarkHtml).process(doc.markdown);
+		const document = await loadDoc(slug);
+		const processed = await remark().use(remarkHtml).process(document.markdown);
 		const html = applyBaseToRootRelativeUrls(processed.toString());
+
 		return {
+			section,
 			slug,
-			title: doc.title,
-			description: doc.description,
+			title: document.title,
+			description: document.description,
 			html
 		};
-	} catch (e: unknown) {
-		throw error(404, e instanceof Error ? e.message : 'Not found');
+	} catch (e) {
+		throw error(404, 'Not found');
 	}
 };

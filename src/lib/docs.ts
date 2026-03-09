@@ -47,13 +47,24 @@ function normalizeSlugFromPath(path: string): string {
 	return rel.replace(/\.md$/, '').replace(/^\/+/, '');
 }
 
+function normalizePrefix(prefix: string): string {
+	return prefix.replace(/^\/+/, '').replace(/\/+$/, '');
+}
+
+function hasPrefix(slug: string, prefix?: string): boolean {
+	if (!prefix) return true;
+	const normalized = normalizePrefix(prefix);
+	if (!normalized) return true;
+	return slug === normalized || slug.startsWith(`${normalized}/`);
+}
+
 export async function listDocs(prefix?: string): Promise<DocMeta[]> {
 	const entries = Object.entries(files);
 
 	const metas: DocMeta[] = [];
 	for (const [path, loader] of entries) {
 		const slug = normalizeSlugFromPath(path);
-		if (prefix && !slug.startsWith(prefix)) continue;
+		if (!hasPrefix(slug, prefix)) continue;
 
 		const raw = await loader();
 		const { frontmatter } = parseFrontmatter(raw);
@@ -67,6 +78,22 @@ export async function listDocs(prefix?: string): Promise<DocMeta[]> {
 
 	metas.sort((a, b) => a.slug.localeCompare(b.slug));
 	return metas;
+}
+
+export async function listSections(): Promise<string[]> {
+	const sections = new Set<string>();
+	for (const path of Object.keys(files)) {
+		const slug = normalizeSlugFromPath(path);
+		const [section] = slug.split('/');
+		if (section) sections.add(section);
+	}
+	return Array.from(sections).sort((a, b) => a.localeCompare(b));
+}
+
+export async function listDocsBySection(section: string): Promise<DocMeta[]> {
+	const normalizedSection = normalizePrefix(section).split('/')[0];
+	if (!normalizedSection) return [];
+	return listDocs(normalizedSection);
 }
 
 export async function loadDoc(

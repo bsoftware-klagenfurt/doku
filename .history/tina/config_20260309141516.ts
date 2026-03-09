@@ -26,6 +26,7 @@ export default defineConfig({
 				label: 'Docs',
 				path: 'content/docs',
 				ui: {
+          // Don't allow editors to create new navigation items
 				allowedActions: {
 						create: true,
 						delete: true,
