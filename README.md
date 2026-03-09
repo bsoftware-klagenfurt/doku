@@ -40,3 +40,33 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+```
+
+## GitHub Pages
+
+In the repository settings, configure GitHub Pages to use:
+
+- **Source: GitHub Actions**
+
+## TinaCloud secrets
+
+Set the following repository secrets:
+
+- `TINA_PUBLIC_CLIENT_ID`
+- `TINA_TOKEN`
+
+## Important note
+
+GitHub Pages is public. Do not store private content in this repository if it must not be publicly accessible.
