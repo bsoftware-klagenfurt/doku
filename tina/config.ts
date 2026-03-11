@@ -26,11 +26,11 @@ export default defineConfig({
 				label: 'Docs',
 				path: 'content/docs',
 				ui: {
-				allowedActions: {
+					allowedActions: {
 						create: true,
 						delete: true,
-						createNestedFolder: false,
-					},
+						createNestedFolder: true
+					}
 				},
 				format: 'md',
 				fields: [

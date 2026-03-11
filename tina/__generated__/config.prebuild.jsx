@@ -28,7 +28,7 @@ var config_default = defineConfig({
           allowedActions: {
             create: true,
             delete: true,
-            createNestedFolder: false
+            createNestedFolder: true
           }
         },
         format: "md",
