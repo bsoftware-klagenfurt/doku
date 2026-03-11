@@ -11,6 +11,9 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base
+		},
+		version: {
+			pollInterval: 60_000
 		}
 	}
 };

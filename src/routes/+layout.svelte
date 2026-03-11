@@ -1,10 +1,21 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+	import { updated } from '$app/state';
 	import favicon from '$lib/assets/favicon.svg';
 	import { resolve } from '$app/paths';
 	import '../main.css';
 	import '../markdown.css';
 
-	let { children } = $props();
+	let { data, children } = $props<{
+		data: { sections: string[] };
+		children: import('svelte').Snippet;
+	}>();
+
+	$effect(() => {
+		if (browser && updated.current) {
+			location.reload();
+		}
+	});
 </script>
 
 <svelte:head>
@@ -24,6 +35,9 @@
 
 			<nav class="site-nav" aria-label="Main navigation">
 				<a href={resolve('/')}>Home</a>
+				{#each data.sections as section}
+					<a href={resolve(`/${section}`)}>{section}</a>
+				{/each}
 				<!-- <a href={resolve('/admin/')} rel="external">Admin</a> -->
 			</nav>
 		</div>
