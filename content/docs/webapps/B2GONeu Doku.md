@@ -7,15 +7,13 @@ description: B2GO Neu Handbuch V1
 
 ## 1	Belegerfassung
 
-In der Maske „Belegerfassung“ können neue Beleg mit den Vorgegeben Beleganlage Buttons erstellt werden. 
+In der Maske „Belegerfassung“ können neue Beleg mit den Vorgegeben Beleganlage Buttons erstellt werden.
 
 Belege können nach Benutzer gefiltert geladen und bearbeitet werden.
 
- 
-
 ![](/images/b1.png)
 
-### 2.1 Beleganlage Button
+### 1.1 Beleganlage Button
 
 Die Belegarten sind über die Metadaten vorgegeben und können dort konfiguriert werden. Der Standard ist:
 
@@ -27,7 +25,7 @@ Die Belegarten sind über die Metadaten vorgegeben und können dort konfiguriert
 
 •	Serviceauftrag
 
-Belege 
+Belege
 
 Belege sind in zwei Gruppen aufgeteilt worden „Meine Belege“ und „Nicht zugeordnete Belege“
 
@@ -35,23 +33,15 @@ In der Schaltfläche „Meine Belege“ finden sich alle Belege die dem mobilen 
 
 In der Schaltfläche „Nicht zugeordnete Belege“ sind alle Belege ohne Benutzerzuordnung.
 
-3.2	Belegliste „Meine Belege“
+### 1.2	Belegliste „Meine Belege“
 
 In der Belegliste werden die Belege des „mobilen User“ „b2go-demo“ angezeigt.
 
- 
-
- 
-
- 
+ ![](/images/b2.png)
 
 In dieser Maske können Belege gesucht und gefiltert werden.
 
- 
-
-Die Belege können einer Karten- sowie Listenansicht angezeigt werden 
-
- 
+Die Belege können einer Karten- sowie Listenansicht angezeigt werden
 
 3.2.1	Filterung:
 
@@ -65,17 +55,11 @@ Die Belegliste können folgende Parametern gefiltert werden:
 
 Geben sie den gewünschten Suchparameter in die Suchzeile ein und tippen Sie auf das Lupensymbol oder die „Return-Taste“ auf der Tastatur
 
- 
-
 3.2.2	Sortierung:
 
 Mit dem Sortierbutton wird das Sortierfenster angezeigt
 
- 
-
-Die Belege können nach folgende Felder Sortiert werden: 
-
- 
+Die Belege können nach folgende Felder Sortiert werden:
 
 3.2.3	Belegstati
 
@@ -89,19 +73,15 @@ Standardmäßig gibt es 3 Belegstati:
 
 3.3	Belegdetails
 
- 
-
 Ein Beleg ist in 3 Teile (Reiter) unterteilt.
 
 Jeder Reiter ist über die Metadaten konfigurierbar.
 
 •	Belegkopf
 
-•	Position 
+•	Position
 
 •	Belegfuß
-
- 
 
 Belegkopf:
 
@@ -125,8 +105,6 @@ Die Gruppen, sowie die Gruppenfelder können ebenfalls in den Metadaten angepass
 
 Der Reiter Position zeigt alle Positionen des Beleges:
 
- 
-
 Folgende Felder werden angezeigt:
 
 •	Matchcode
@@ -137,11 +115,9 @@ Folgende Felder werden angezeigt:
 
 Über das i-Symbol, kann der Einzelpreis aus der Warenwirtschaft gelesen werden
 
- 
-
 Am Ende der Positionsliste wird eine Summenzeile mit folgenden Informationen gezeigt.
 
-•	Summe 
+•	Summe
 
 •	USt
 
@@ -153,7 +129,7 @@ In Belegfuss werden folgende Informationen angezeigt:
 
 •	Rabatt
 
-•	Zuschläge 
+•	Zuschläge
 
 3.4	Belegerstellung / Bearbeiten
 
@@ -163,11 +139,7 @@ Es ist ebenfalls möglich einen Beleg aus der Belegliste mit folgenden Button zu
 
 Dieser Button startet jedoch immer ein Angebot.
 
- 
-
 Neuer Beleg:
-
- 
 
 Die Belegerfassung ist wie ein Assistent oder ein mehrstufiges Formular aufgebaut.
 
@@ -191,27 +163,19 @@ Kunde:
 
 Kundenauswahl ist ein Pflichtfeld. Tippen Sie auf das Pfeil Symbol und wählen Sie einen Kunden aus der Kundensuche.
 
- 
-
 Kundensuche
-
- 
 
 Beleginformationen:
 
 Nach dem wählen eines Kunden werden die Beleginformationen, Liefer- sowie Rechnungs- Adresse automatisch gesetzt.
 
- 
-
 3.5	Positionen
 
 Mit Next oder Tippen auf 3-Positionen kann zur Positionserfassung navigiert werden.
 
-Mit tippen auf neue Position, wird sofort die Positionssuche geöffnet. 
+Mit tippen auf neue Position, wird sofort die Positionssuche geöffnet.
 
 Des Weiteren besteht die Möglichkeit eine Position mittels Barcode-Scan der EAN-Nummer zu erfassen.
-
- 
 
  
 
@@ -225,8 +189,6 @@ In der Positionssuche könne Sie nach den folgenden Parametern gesucht werden:
 
 •	Artikelgruppe
 
- 
-
 Wählen Sie eine Position
 
 3.5.2	Positionsdetails
@@ -235,15 +197,11 @@ In den Positionsdetails können die Menge sowie der Rabatt vergeben werden.
 
 Mit Speichern wird die Position in den Beleg eingefügt.
 
- 
-
 Wiederholen sie diesen Vorgang bis sie alle Positionen für Ihren Beleg erfasst haben.
-
- 
 
 3.6	Fertigstellen
 
-Der Beleg kann nun Fertiggestellt werden. 
+Der Beleg kann nun Fertiggestellt werden.
 
 Tippen Sie 2x auf Next oder in der Fortschrittsleiste auf 5 – Fertigstellen.
 
@@ -255,19 +213,13 @@ Wenn Sie die Unterschrift vergeben ist der Name verpflichtend.
 
 Tippen Sie danach auf Create und der Beleg wird gespeichert.
 
- 
-
 Der Beleg ist sofort in der Belegerfassung unter „Meine Belege“ ersichtlich.
-
- 
 
 3	Belegerfassung
 
-In der Maske „Belegerfassung“ können neue Beleg mit den Vorgegeben Beleganlage Buttons erstellt werden. 
+In der Maske „Belegerfassung“ können neue Beleg mit den Vorgegeben Beleganlage Buttons erstellt werden.
 
 Belege können nach Benutzer gefiltert geladen und bearbeitet werden.
-
- 
 
 3.1	Beleganlage Button
 
@@ -281,7 +233,7 @@ Die Belegarten sind über die Metadaten vorgegeben und können dort konfiguriert
 
 •	Serviceauftrag
 
-Belege 
+Belege
 
 Belege sind in zwei Gruppen aufgeteilt worden „Meine Belege“ und „Nicht zugeordnete Belege“
 
@@ -293,19 +245,11 @@ In der Schaltfläche „Nicht zugeordnete Belege“ sind alle Belege ohne Benutz
 
 In der Belegliste werden die Belege des „mobilen User“ „b2go-demo“ angezeigt.
 
- 
-
- 
-
  
 
 In dieser Maske können Belege gesucht und gefiltert werden.
 
- 
-
-Die Belege können einer Karten- sowie Listenansicht angezeigt werden 
-
- 
+Die Belege können einer Karten- sowie Listenansicht angezeigt werden
 
 3.2.1	Filterung:
 
@@ -319,17 +263,11 @@ Die Belegliste können folgende Parametern gefiltert werden:
 
 Geben sie den gewünschten Suchparameter in die Suchzeile ein und tippen Sie auf das Lupensymbol oder die „Return-Taste“ auf der Tastatur
 
- 
-
 3.2.2	Sortierung:
 
 Mit dem Sortierbutton wird das Sortierfenster angezeigt
 
- 
-
-Die Belege können nach folgende Felder Sortiert werden: 
-
- 
+Die Belege können nach folgende Felder Sortiert werden:
 
 3.2.3	Belegstati
 
@@ -343,19 +281,15 @@ Standardmäßig gibt es 3 Belegstati:
 
 3.3	Belegdetails
 
- 
-
 Ein Beleg ist in 3 Teile (Reiter) unterteilt.
 
 Jeder Reiter ist über die Metadaten konfigurierbar.
 
 •	Belegkopf
 
-•	Position 
+•	Position
 
 •	Belegfuß
-
- 
 
 Belegkopf:
 
@@ -379,8 +313,6 @@ Die Gruppen, sowie die Gruppenfelder können ebenfalls in den Metadaten angepass
 
 Der Reiter Position zeigt alle Positionen des Beleges:
 
- 
-
 Folgende Felder werden angezeigt:
 
 •	Matchcode
@@ -391,11 +323,9 @@ Folgende Felder werden angezeigt:
 
 Über das i-Symbol, kann der Einzelpreis aus der Warenwirtschaft gelesen werden
 
- 
-
 Am Ende der Positionsliste wird eine Summenzeile mit folgenden Informationen gezeigt.
 
-•	Summe 
+•	Summe
 
 •	USt
 
@@ -407,7 +337,7 @@ In Belegfuss werden folgende Informationen angezeigt:
 
 •	Rabatt
 
-•	Zuschläge 
+•	Zuschläge
 
 3.4	Belegerstellung / Bearbeiten
 
@@ -417,11 +347,7 @@ Es ist ebenfalls möglich einen Beleg aus der Belegliste mit folgenden Button zu
 
 Dieser Button startet jedoch immer ein Angebot.
 
- 
-
 Neuer Beleg:
-
- 
 
 Die Belegerfassung ist wie ein Assistent oder ein mehrstufiges Formular aufgebaut.
 
@@ -445,27 +371,19 @@ Kunde:
 
 Kundenauswahl ist ein Pflichtfeld. Tippen Sie auf das Pfeil Symbol und wählen Sie einen Kunden aus der Kundensuche.
 
- 
-
 Kundensuche
-
- 
 
 Beleginformationen:
 
 Nach dem wählen eines Kunden werden die Beleginformationen, Liefer- sowie Rechnungs- Adresse automatisch gesetzt.
 
- 
-
 3.5	Positionen
 
 Mit Next oder Tippen auf 3-Positionen kann zur Positionserfassung navigiert werden.
 
-Mit tippen auf neue Position, wird sofort die Positionssuche geöffnet. 
+Mit tippen auf neue Position, wird sofort die Positionssuche geöffnet.
 
 Des Weiteren besteht die Möglichkeit eine Position mittels Barcode-Scan der EAN-Nummer zu erfassen.
-
- 
 
  
 
@@ -479,8 +397,6 @@ In der Positionssuche könne Sie nach den folgenden Parametern gesucht werden:
 
 •	Artikelgruppe
 
- 
-
 Wählen Sie eine Position
 
 3.5.2	Positionsdetails
@@ -489,15 +405,11 @@ In den Positionsdetails können die Menge sowie der Rabatt vergeben werden.
 
 Mit Speichern wird die Position in den Beleg eingefügt.
 
- 
-
 Wiederholen sie diesen Vorgang bis sie alle Positionen für Ihren Beleg erfasst haben.
-
- 
 
 3.6	Fertigstellen
 
-Der Beleg kann nun Fertiggestellt werden. 
+Der Beleg kann nun Fertiggestellt werden.
 
 Tippen Sie 2x auf Next oder in der Fortschrittsleiste auf 5 – Fertigstellen.
 
@@ -509,8 +421,4 @@ Wenn Sie die Unterschrift vergeben ist der Name verpflichtend.
 
 Tippen Sie danach auf Create und der Beleg wird gespeichert.
 
- 
-
 Der Beleg ist sofort in der Belegerfassung unter „Meine Belege“ ersichtlich.
-
- 
