@@ -41,6 +41,8 @@ In der Belegliste werden die Belege des „mobilen User“ „b2go-demo“ angez
 
 In dieser Maske können Belege gesucht und gefiltert werden.
 
+![](/images/b3.png)
+
 Die Belege können einer Karten- sowie Listenansicht angezeigt werden
 
 3.2.1	Filterung:
